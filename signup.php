@@ -27,13 +27,25 @@
       <div class="valid-feedback">Valid.</div>
       <div class="invalid-feedback">Please fill out this field.</div>
     </div>
-	
+
+    <div class="form-group">
+      <label for="uname">Gender:</label>
+      <select type="gender" class="form-control" id="ulastname" placeholder="Enter Lastname" name="ulastname" required>
+      <option value="M">Male</option>
+      <option value="F">Female</option>
+        <option value="O">other</option>
+      <div class="valid-feedback">Valid.</div>
+    </select>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+
     <div class="form-group">
       <label for="uname">Email:</label>
       <input type="email" class="form-control" id="uemail" placeholder="Enter email" name="uemail" required>
       <div class="valid-feedback">Valid.</div>
       <div class="invalid-feedback">Please fill out this field.</div>
     </div>
+
     <div class="form-group">
       <label for="pwd">Password:</label>
       <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
@@ -46,7 +58,7 @@
       <div class="valid-feedback">Valid.</div>
       <div class="invalid-feedback">Please fill out this field.</div>
     </div>
-    
+
     <button type="submit" class="btn btn-primary">Register</button>
   </form>
 </div>
