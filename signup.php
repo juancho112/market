@@ -3,18 +3,28 @@
 <head>
   <title>Sign Up</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, data-bv-identical-field, 	data-bv-identical-message">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script>
+    function comprobarClave(){
+   	  password1 = document.f1.pswd.value
+   	  password2 = document.f1.pswd2.value
+   	  if (password1 == password2)
+		    document.f1.submit()
+        else
+        alert("Digite la misma contraseña")
+      }
+  </script>
 </head>
 <body>
 
 <div class="container">
   <h2>Sign Up</h2>
   <p>Formulario de registro de usuarios</p>
-  <form action="uregister.php" class="was-validated" method="POST">
+  <form action="uregister.php" class="was-validated" method="POST" name="f1">
     <div class="form-group">
       <label for="uname">Fisrtname:</label>
       <input type="text" class="form-control" id="uname" placeholder="Enter Firstname" name="uname" required>
@@ -37,31 +47,27 @@
 	  </select>
       <div class="invalid-feedback">Please fill out this field.</div>
     </div>
-
     <div class="form-group">
       <label for="uname">Email:</label>
       <input type="email" class="form-control" id="uemail" placeholder="Enter email" name="uemail" required>
       <div class="valid-feedback">Valid.</div>
       <div class="invalid-feedback">Please fill out this field.</div>
     </div>
-
-    <form id="identicalForm" class="form-horizontal">
     <div class="form-group">
-        <label class="col-sm-3 control-label">Password</label>
-        <div class="col-sm-5">
-            <input type="password" class="form-control" name="pswd" />
-        </div>
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+      <div class="help-block">Minimum of 6 characters</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Confirmar password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd2" required>
+      <div class="help-block">Minimum of 6 characters</div>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
     </div>
 
-    <div class="form-group">
-        <label class="col-sm-3 control-label">Retype password</label>
-        <div class="col-sm-5">
-            <input type="password" class="form-control" name="pswd2" />
-        </div>
-    </div>
-</form>
-
-    <button type="submit" class="btn btn-primary">Register</button>
+    <button type="button" class="btn btn-primary"  onClick="comprobarClave()"  >Register</button>
   </form>
 </div>
 
