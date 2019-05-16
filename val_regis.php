@@ -6,9 +6,9 @@
     $pswd=password_hash($_POST['pswd'],PASSWORD_DEFAULT);
 
     $sql_validation = "SELECT * FROM usuarios WHERE email = '$email' ";
-    //2. Execute query
+
     $result=$conn->query($sql_validation);
-    //3. Validation
+
     if($result->num_rows == 0){
           $sql_validation ="SELECT * FROM usuarios WHERE email='$email'";
       if ($conn->query($sql) == 0) {
