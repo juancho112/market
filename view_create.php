@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -24,9 +24,9 @@
       <h2>Mi tienda</h2>
       <br>
       <!-- Nav tabs -->
-      
+
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-      
+
         <input class="form-control mr-sm-2" disabled="ok" type="text" placeholder="Busca producto por nombre o código" >
         <ul class="navbar-nav">
     <li class="nav-item ">
@@ -45,7 +45,7 @@
       <a class="nav-link disabled" href="#">Disabled</a>
     </li>
   </ul>
-      
+
     </nav>
     <br>
   </header>
@@ -66,17 +66,19 @@
   <div class="form-group">
     <label for="cant" class="mr-sm-2">Cantidad:</label>
     <input type="number" class="form-control mb-2 mr-sm-2" id="cant" name="cantidad" required>
-    
+
     <label for="pcosto" class="mr-sm-2">Costo producto:</label>
-    
+
     <input type="text" class="form-control mb-2 mr-sm-2" id="pcosto" name="costo" autocomplete="off" required>
   </div>
   <div class="form-group">
   </div>
+  
   <div class="form-group">
     <label for="foto">Imagen de producto:</label>
     <input type="file" class="form-control" id="foto" name="foto" value="Examinar" >
   </div>
+
   <button type="submit" class="btn btn-primary">Registrar</button>
   <button type="reset" class="btn btn-secundary">Cancelar</button>
 </form>
@@ -92,4 +94,3 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
-

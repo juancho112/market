@@ -24,7 +24,7 @@
 <div class="container">
   <h2>Sign Up</h2>
   <p>Formulario de registro de usuarios</p>
-  <form action="uregister.php" class="was-validated" method="POST" name="f1">
+  <form action="uregister.php" class="was-validated" method="POST"  name="f1" enctype="multipart/form-data">
     <div class="form-group">
       <label for="uname">Fisrtname:</label>
       <input type="text" class="form-control" id="uname" placeholder="Enter Firstname" name="uname" required>
@@ -38,6 +38,13 @@
       <div class="invalid-feedback">Please fill out this field.</div>
     </div>
 
+    <div class="form-group">
+      <label for="uname">identi:</label>
+      <input type="text" class="form-control" id="ident" placeholder="Enter ID" name="ident" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+
 	<div class="form-group">
       <label for="uname">Gender:</label>
       <select name="gender" class="form-control">
@@ -47,12 +54,16 @@
 	  </select>
       <div class="invalid-feedback">Please fill out this field.</div>
     </div>
+
     <div class="form-group">
       <label for="uname">Email:</label>
       <input type="email" class="form-control" id="uemail" placeholder="Enter email" name="uemail" required>
       <div class="valid-feedback">Valid.</div>
       <div class="invalid-feedback">Please fill out this field.</div>
     </div>
+
+
+
     <div class="form-group">
       <label for="pwd">Password:</label>
       <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
@@ -67,9 +78,21 @@
       <div class="invalid-feedback">Please fill out this field.</div>
     </div>
 
+    <div class="form-group">
+      <label for="photo">photo</label>
+      <input type="file" class="form-control" id="photo" name="photo" required>
+
+    </div>
+
+
+
     <button type="button" class="btn btn-primary"  onClick="comprobarClave()"  >Register</button>
   </form>
 </div>
+
+
+
+
 
 </body>
 </html>
